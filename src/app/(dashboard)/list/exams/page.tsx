@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
@@ -55,11 +56,12 @@ const ExamListPage = () => {
               <Image src="/edit.png" alt="" width={16} height={16} />
             </button>
           </Link>
-          {role === "admin" && (
-            <button className="w-7 flex items-center justify-center rounded-full bg-KliPurple">
-              <Image src="/delete.png" alt="" width={16} height={16} />
-            </button>
-          )}
+          {(role === "admin" || role === "teacher") && (
+          <>
+            <FormModal table="exam" type="update" data={item} />
+            <FormModal table="exam" type="delete" id={item.id} />
+          </>
+        )}
         </div>
       </td>
     </tr>

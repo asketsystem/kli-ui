@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
@@ -57,9 +58,10 @@ const ClassListPage = () => {
             </button>
           </Link>
           {role === "admin" && (
-            <button className="w-7 flex items-center justify-center rounded-full bg-KliPurple">
-              <Image src="/delete.png" alt="" width={16} height={16} />
-            </button>
+            <>
+              <FormModal table="class" type="update" data={item} />
+              <FormModal table="class" type="delete" id={item.id} />
+            </>
           )}
         </div>
       </td>

@@ -1,5 +1,6 @@
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalendar";
+import FormModal from "@/components/FormModal";
 import Performance from "@/components/Performance";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +16,7 @@ const SingleStudentPage = () => {
           <div className="bg-Kli py-6 px-4 rounded-md flex-1 flex gap-4">
             <div className="w-1/3">
               <Image
-                src="https://images.pexels.com/photo/5414817/pexels-photo-5414817.jpeg?auto=comopress&cs=tinysrgb&w=1200"
+                src="https://images.pexels.com/photos/8093018/pexels-photo-8093018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt=""
                 width={144}
                 height={144}
