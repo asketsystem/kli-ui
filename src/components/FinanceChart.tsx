@@ -49,21 +49,6 @@ const data = [
     expense: 4300,
   },
   {
-    name: "Jul",
-    income: 3490,
-    expense: 4300,
-  },
-  {
-    name: "Jul",
-    income: 3490,
-    expense: 4300,
-  },
-  {
-    name: "Jul",
-    income: 3490,
-    expense: 4300,
-  },
-  {
     name: "Aug",
     income: 3490,
     expense: 4300,
@@ -95,13 +80,7 @@ const FinanceChart = () => {
     <div className="bg-white rounded-xl w-full h-full p-4">
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">Finance</h1>
-        <Image
-          src="/moreDark.png"
-          alt="more"
-          width={20}
-          height={20}
-          className="cursor-pointer"
-        ></Image>
+        <Image src="/moreDark.png" alt="" width={20} height={20} />
       </div>
       <ResponsiveContainer width="100%" height="90%">
         <LineChart
@@ -123,12 +102,7 @@ const FinanceChart = () => {
             tickLine={false}
             tickMargin={10}
           />
-          <YAxis
-            axisLine={false}
-            tick={{ fill: "#d1d5db" }}
-            tickLine={false}
-            tickMargin={20}
-          />
+          <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false}  tickMargin={20}/>
           <Tooltip />
           <Legend
             align="center"
@@ -141,7 +115,7 @@ const FinanceChart = () => {
             stroke="#C3EBFA"
             strokeWidth={5}
           />
-          <Line type="monotone" dataKey="expense" stroke="#CFCEFF" strokeWidth={5} />
+          <Line type="monotone" dataKey="expense" stroke="#CFCEFF" strokeWidth={5}/>
         </LineChart>
       </ResponsiveContainer>
     </div>
