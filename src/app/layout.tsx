@@ -8,8 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "KlingboIntelligence School Management Dashboard",
-  description: "Next.js School Management System",
+  title: "Klingbo Intelligence ",
+  description: "School Management Dashboard",
 };
 
 export default function RootLayout({
